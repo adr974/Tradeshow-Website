@@ -97,6 +97,12 @@ span.welcome2
   margin-bottom: 80px;
 }
 
+.row
+{
+  height: 100%;
+  width: 100%;
+}
+
 #ourTeamTitle
 {
   color: #2d2d2d;
@@ -115,26 +121,18 @@ span.welcome2
   color:#017BB9;
 }
 
-
-#underlineDiv
+#underline-div
 {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  text-align: center;
+}
+#underline
+{
+  height: 1px;
+  display: inline-block;
+  border-top: 1px solid #eee;
+  width: 55%;
 }
 
-#dividerLine
-{
-    background-color: #DCDCDC;
-    height: 2px;
-    width: 300px;
-}
-
-#dividerLineTeam
-{
-    background-color: #DCDCDC;
-    height: 2px;
-    width: 1000px;
-}
 
 #blue-line
 {
@@ -318,7 +316,9 @@ span.welcome2
   color: #fff;
   font-size: 40px;
   border-radius: 50%;
+  margin-top: 10px;
 }
+
 
 #nameConA
 {
@@ -376,6 +376,7 @@ span.welcome2
   cursor: pointer;
   font-weight: bold;
 }
+
 
 /*----------------------------------Team Names--------------------------------*/
 
@@ -597,6 +598,23 @@ span.welcome2
 {
   color: #2d2d2d;
   font-family: Montserrat,sans-serif;
-  font-size: 1.6em;
+  font-size: 32px;
   font-weight: 600;
 }
+
+#stretchImg1
+{
+    width: 70%;
+    height: 500px;
+    background-image: url("assets/photos/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    box-shadow: 0px 1px 10px #999;
+}
+/*#stretchImg1
+{
+  margin-top: 40px;
+}*/

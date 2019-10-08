@@ -133,6 +133,14 @@ span.welcome2
 	margin-bottom: 100px;
 }
 
+#p-banner
+{
+	text-align: center;
+	font-weight: lighter;
+	font-size: 25px;
+	color: #F5F5F5;
+}
+
 #boldp
 {
 	font-weight: bold;
@@ -172,9 +180,11 @@ span.welcome2
   transition: width .3s;
 }
 
-/*Crousel*/
-
-
+#services-img
+{
+	height: 120px;
+	width: 120px;
+}
 /*---------------------Image Stretch/*---------------------*/
 #demo
 {
@@ -471,6 +481,25 @@ span.welcome
 #pDiv2
 {
 	width: 550px;
+}
+
+#p-txt
+{
+	font-weight: lighter;
+	font-size: 20px;
+	color: #626262;
+}
+#p-preview
+{
+	height: 500px;
+	width: 500px;
+}
+
+#welcome-txt
+{
+	text-align: center;
+	font-weight: lighter;
+	font-size: 25px;
 }
 
 /*---------------------Image Stretch/*---------------------*/
