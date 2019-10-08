@@ -8,6 +8,12 @@ body
 	text-align: center;
 }
 
+.bold
+{
+	font-weight: bold;
+	color: #017BB9;
+}
+
 /* ------------------------------------- Side Nav ----------------------------------------*/
 
 .navbar
@@ -153,10 +159,6 @@ h1, h2
 }
 
 /*------------------------------ Our Goal------------------   */
-#ourGoalDiv
-{
-	margin-bottom: 10px;
-}
 
 #ourTitle
 {
