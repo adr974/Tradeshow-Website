@@ -1,0 +1,333 @@
+body
+{
+	background-color: #f9f9f9 !important;
+}
+
+.container
+{
+	text-align: center;
+}
+
+/* ------------------------------------- Side Nav ----------------------------------------*/
+
+.navbar
+{
+  border-bottom: 1px solid lightgrey;
+  box-shadow: 0px 1px 10px #999;
+  font-family: Open Sans, sans-serif;
+  background-color: white;
+}
+.nav-item
+{
+	font-size: 20px;
+}
+
+#logoNav
+{
+	height: 70px;
+	width: 70px;
+}
+
+#logoLink
+{
+	width: 70px;
+	height: 70px;
+	margin-top: -10px;
+	margin-bottom: -18px;
+}
+
+#link
+{
+	text-decoration: none;
+}
+
+a.welcome1
+{
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: -5px;
+}
+span.welcome1
+{
+	color:#263238;
+	font-weight: 500;
+	font-size:30px;
+}
+span.welcome2
+{
+	color:#017BB9;
+	font-weight:bold;
+	font-size:30px;
+}
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  margin-top: -5px;
+}
+
+.navbar-brand2 {
+  transform: translateX(100%);
+  right: 90px;
+  position: absolute;
+  margin-top: 2px;
+}
+
+h1, h2
+{
+	color: #017BB9;
+	padding-bottom: 15px;
+}
+
+
+#nav-hover
+{
+  display: inline-block;
+  position: relative;
+  margin-top: 0;
+}
+
+#nav-hover::after
+{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #017BB9;
+  transition: width .3s;
+}
+
+#nav-hover:hover::after
+{
+  width: 100%;
+  transition: width .3s;
+}
+
+#active-hover
+{
+	font-weight: bold;
+	color: #017BB9;
+	width: 100%;
+	border-bottom: 1px solid lightgrey;
+	display: inline-block;
+	position: 
+}
+
+.dropdown-item
+{
+	margin: 0px !important;
+}
+
+/*------------------------ About Us ----------------------------*/
+#about-wrapper
+{
+	text-align: left;
+	margin-top: 40px;
+	margin-bottom: 100px;
+	text-align: left;
+}
+#about-con
+{
+	margin-bottom: 25px;
+}
+#about-con2
+{
+	margin-bottom: 35px;
+}
+
+#about-title
+{
+	color: #2d2d2d;
+	font-family: Montserrat,sans-serif;
+	font-size: 1.6em;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+#about-txt
+{
+	color: #626262;
+    font-size: 20px;
+    font-family: Open Sans,sans-serif;
+}
+
+/*------------------------------ Our Goal------------------   */
+#ourGoalDiv
+{
+	margin-bottom: 10px;
+}
+
+#ourTitle
+{
+	font-size: 40px;
+	margin-bottom: 20px;
+	font-size:20
+}
+
+#ourGoalInfo
+{
+	font-size: 25px;
+	font-weight: lighter;
+}
+
+
+/*-----------------------------------------------Contact Us-----------------------------------------------*/
+#CU
+{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#contactUs
+{
+	border: 1px solid #DCDCDC;
+	box-shadow: 0px 1px 5px #999;
+	margin-bottom: 20px;
+}
+
+#contact
+{
+
+	width: 900px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.box .icon .fa
+{
+	font-size: 60px;
+	cursor: pointer;
+}
+
+.box .icon h3,
+.box .icon h4
+{
+	position: relative;
+	overflow: hidden;
+	font-weight: 400;
+	margin: 0;
+	padding: 2px 5px;
+	font-size: 24px;
+}
+
+.box .icon h4
+{
+	font-weight: 600;
+	margin: 5px 0;
+	font-style: 30px;
+}
+
+.box .icon h3:before,
+.box .icon h4:before
+{
+	content: '';
+	position: absolute ;
+	top: 0;
+	left: 100%;;
+	width: 100%;
+	height: 100%;
+	background: #696969;
+	transition: 1s;
+}
+
+.box .icon h4:before
+{
+	left: initial;
+	right: 100%;
+	background-color: #017BB9;
+}
+
+
+.box .fa:hover ~ h3:before
+{
+	left: -100%;
+}
+.box .fa:hover ~ h4:before
+{
+	left: initial;
+	right: -100%;
+}
+
+
+/*--------------------------Bottom Info--------------------------*/
+#hr
+{
+  border: 1px solid #b4b5b8;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#footerDiv
+{
+	width: 100%;
+	height: 80px;
+	background-color: #2f333b;
+}
+
+#footer
+{
+	padding-top: 30px;
+	color: #b4b5b8;
+	text-align: center;
+}
+
+#bottomInfo
+{
+  width: 100%;
+  height: 100%;
+  background: #363a43;
+  color: white;
+}
+.bottomDiv
+{
+  margin: 0;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.bDiv
+{ 
+  margin: 30px;
+  height: 100%;
+  width: 300px;
+  text-align: left;
+}
+
+#CMiniLogo
+{
+  color: #D0D3D4;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+
+}
+#SMiniLogo
+{
+  color:#017BB9;
+  font-weight: 600;
+  font-size: 30px;
+
+}
+
+#miniTitle
+{
+  font-size: 25px;
+  color: #f0f0f0;
+}
+
+.miniInfo
+{
+  font-weight: lighter;
+  color: #b4b5b8;
+}
+
+#miniLink
+{
+  color: #f0f0f0;
+}
