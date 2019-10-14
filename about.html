@@ -11,13 +11,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="bootstrap.min.js"></script>
 
-	<body>
+	<body style="background-color: #f9f9f9">
 		<!--NavBar-->
-	  	<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-light sticky-top">
 			<a class="navbar-brand2"><img id="logoNav" src="assets/logo.png"></a>
 
 			<div class="navbar-brand">
-				<a id="link" href="main.html" class="welcome-processes"><span class="welcome1">Cell</span><span class="welcome2">Systems</span></a>
+				<a id="link" href="index.html" class="welcome-processes"><span class="welcome1">Cell</span><span class="welcome2">Systems</span></a>
 			</div>
 
 
@@ -25,117 +25,218 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item">
-		        <a href="main.html"><img id="logoLink" src="assets/logo.png" /></a>
-		      </li>
-		      <li class="nav-item">
-		        <a id="nav-hover" class="nav-link" href="about.html">About</a>
-		      </li>
-
-		      <li class="nav-item">
-		        <a id="nav-hover" class="nav-link" href="ourteam.html">Our Team</a>
-		      </li>
-		      <li class="nav-item">
-		        <a id="nav-hover" class="nav-link" href="patientPal.html">PatientPal</a>
-		      </li>
-		    </ul>
-		    <!-- <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form> -->
-		  </div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a href="index.html"><img id="logoLink" src="assets/logo.png" /></a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-hover" class="nav-link" href="about.html">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-hover" class="nav-link" href="patientPal.html">PatientPal</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 
 		<br />
 
-		<!--About Us-->
-		<div id="about-wrapper" class="container" style="height: 100%;">
+
+			<!-- Meet the Team -->
+		<div class="container">
+			<p id="ourTeamTitle">Meet the Team</p>
+		</div>
+		<div id="underline-div">
+			<div id="underline">
+			</div>
+		</div>
+        <div class="container">
+        	<p class="sub-desc">
+        		Here’s where you can discover about our current team along with their array of skillsets in which
+        		they successfully deliver for the team. Learn about the their strengths, skills as you get to know
+				the amazing people we have in CellSystems!
+			</p>
+        </div>
+
+		<div class="container" id="stretchImg1">
+			<img id="myImg" src="assets/photos/1.jpg" alt="Our team at the SMART Building">
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div>
+		</div>
+
+		<!-------------------- Our Goal -------------------->
+		<div class="container">
+			<p id="ourTeamTitle">Our Goal</p>
+		</div>
+		<div id="underline-div">
+			<div id="underline">
+			</div>
+		</div>
+        <div class="container">
+        	<p class="sub-desc">
+        		We strive to create the best software experiences possible. Whether you are a small professional with a handful of clients, or a large hospital dealing with thousands of patients, we aim to provide the optimal software solution for the needs of you and your patients.
+			</p>
+        </div>
+
+
+
+        <!-------------------- Our Team Div -------------------->
+ 		<div class="container" id="ourteam-div">
+ 			<div class="row">
+ 				<div class="container name-con">
+	        		<div class="container">
+	        			<img class="tI1" src="assets/photos/aidan1.jpg">
+	        		</div>
+ 					<div id="nameTitle1" class="container">
+ 						<p class="member-name">Aidan Chen</p>
+ 					</div>
+ 					<div id="nameInfo" class="container">
+					<p>
+						Aidan has a strong academic understanding of   network architecture, business processes, and project management.
+					</p>
+ 					</div>
+	        	</div>
+ 				<div class="container name-con">
+	        		<div class="container">
+	        			<img class="tI2" src="assets/photos/andre1.jpg">
+	        		</div>
+ 					<div id="nameTitle2" class="container">
+ 						<p class="member-name">Andre Del Rosario</p>
+	        		</div>
+ 					<div id="nameInfo" class="container">
+					<p>
+						Andre has a strong academic understanding of software design, web development, and user experience.
+					</p>
+ 					</div>
+	        	</div>
+ 				<div class="container name-con">
+	        		<div class="container">
+	        			<img class="tI4" src="assets/photos/brian1.jpg">
+	        		</div>
+ 					<div id ="nameTitle3" class="container">
+ 						<p class="member-name">Brian Valenzi</p>
+ 					</div>
+ 					<div id="nameInfo" class="container">
+					<p>
+						Brian has a strong academic understanding of cryptography, cyber security, security systems, data structures, and algorithms.
+					</p>
+ 					</div>
+	        	</div>
+ 				<div class="container name-con">
+	        		<div class="container">
+	        			<img class="tI5" src="assets/photos/paul1.jpg">
+	        		</div>
+ 					<div id="nameTitle5" class="container">
+ 						<p class="member-name">Paul Tunbridge</p>
+	        		</div>
+ 					<div id="nameInfo" class="container">
+					<p>
+						Paul has a strong academic understanding of web development, software development, game development, and digital security systems.
+					</p>
+ 					</div>
+	        	</div>
+
+ 				<div class="container name-con">
+	        		<div class="container">
+	        			<img class="tI6" src="assets/photos/peter1.jpg">
+	        		</div>
+ 					<div id="nameTitle6" class="container">
+ 						<p class="member-name">Peter Sims</p>
+	        		</div>
+ 					<div id="nameInfo" class="container">
+					<p>
+						Peter has a strong academic understanding of cyber security, security systems, data structures, and algorithms.
+					</p>
+ 					</div>
+	        	</div>
+ 				<div class="container name-con" style="">
+	        		<div class="container">
+	        			<img class="tI4" src="assets/photos/ryan1.jpg">
+	        		</div>
+ 					<div id ="nameTitle3" class="container">
+ 						<p class="member-name">Ryan Coleman</p>
+ 					</div>
+ 					<div id="nameInfo" class="container">
+					<p>
+						Ryan is a practiced technical writer and researcher who brings strong communication and documentation skills to the team.
+					</p>
+ 					</div>
+	        	</div>
+	        </div>
+	    </div>
+
+
+	    <!-------------------- About Us -------------------->
+		<div class="container">
+			<p id="ourTeamTitle">About Us</p>
+		</div>
+		<div id="about-wrapper" class="container">
 			<div id="about-con">
-				<h1 id="about-title">About Us</h1>
 				<p id="about-txt">
 					Founded with the medical sector in mind, CellSystems has been built from the ground up to cater to the unique needs of the medical software design, from safety and security, to the patient and doctor experience.
 					<br />
 					We take pride in our domain knowledge and expertise, with much of our staff equipped with the skills and knowledge to design and build a rich user experience and high-quality software product to deliver important results in a fast and reliable manner.
 				</p>
 			</div>
+			<div id="about-con2">
+				<div id="about-img-div">
+					<img id="about-img" src="https://demo.siteorigin.com/corp/files/2017/12/about-300x200.jpg" alt="Study photo" />
+					<!-- The Modal -->
+					<div id="myModal2" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img02">
+						<div id="caption"></div>
+					</div>
+					<script>
+						// Get the modal
+						var modal = document.getElementById("myModal2");
 
-			<div id="about-con2" style="display: flex; flex-direction: row;">
-				<div style="height: 100%; margin-right: 30px; flex: 1;">
-					<img src="https://demo.siteorigin.com/corp/files/2017/12/about-300x200.jpg" style="height: 100%; width: 100%;" />
-				</div>
-				<div style="height: 100%; flex: 3">
-					<p id="about-txt">
-						We know your patients health matters most, so we are committed to working with medical professionals to deliver the features they need to work to their needs and augment their practice.
-						<br />
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor scelerisque dictum. Morbi ultrices suscipit neque in pellentesque. Nunc sollicitudin dictum felis, quis venenatis diam lacinia et. Curabitur eu nulla orci.
-					</p>
-				</div>
-			</div>
+						// Get the image and insert it inside the modal - use its "alt" text as a caption
+						var img = document.getElementById("about-img");
+						var modalImg = document.getElementById("img02");
+						var captionText = document.getElementById("caption");
+						img.onclick = function(){
+						modal.style.display = "block";
+						modalImg.src = this.src;
+						captionText.innerHTML = this.alt;
+						}
 
-			<!-- Our Goal -->
-			<div>
-				<h1 id="about-title">Our Mission Statement</h1>
-				<div id="about-con" style="display: flex; flex-direction: row; margin-bottom: 0;">
-					<div style="height: 100%; flex: 3">
+						// Get the <span> element that closes the modal
+						var span = document.getElementsByClassName("close")[0];
+
+						// When the user clicks on <span> (x), close the modal
+						span.onclick = function() { 
+						modal.style.display = "none";
+						}
+					</script>
+				</div>
+				<div id="about-info">
+					<div>
 						<p id="about-txt">
-							Previously, information about this wellbeing was gathered in person by doctors and nurses, but this was found to be an inefficient use of both the patient’s and the medical professional’s time.
+							We know your patients health matters most, so we are committed to working with medical professionals to deliver the features they need to work to their needs and augment their practice.
 							<br />
-							In response to this, electronic patient-reported outcomes (ePROs) have become increasingly popular in a variety of medical fields, including oncology. These outcomes are collected in the form of surveys, which are sent out to patients, typically via email, who complete them online and send them back to be assessed.
 						</p>
 					</div>
-					<div style="height: 100%; margin-right: 30px; flex: 1;">
-						<img src="https://demo.siteorigin.com/corp/files/2017/12/about-300x200.jpg" style="height: 100%; width: 100%;" />
+					<div>
+						<div id="fact">
+							<p id="about-txt">
+								<u>Fact:</u> <br />
+								Cancer is <span class="bold"> one of the leading causes of death</span> in Australia, accounting for almost 30% of all deaths.
+							</p>
+						</div>
 					</div>
-				</div>
-
-				<div>
-					<p id="about-txt">
-						The benefits of these systems are enormous, as they not only save time for the clinicians and the patients but they can also collate, organise and analyse the data (Schwartzberg 2016). Patients have also been found to be more likely to provide accurate information when responding online (Didymo Designs 2017).
-						<br /> <br />
-						Our task is to create a new survey toolkit to be used within the NSW Department of Health that will enable users to create and send surveys to patients in order to collect ePROs. This toolkit will serve as a replacement to the current system, PROSAIQ, which has several areas upon which we aim to improve.
-					</p>
 				</div>
 			</div>
 		</div>
 
 
-		
 
-
-<!-- 		<div class="container" id="contactUs">
-			<div class="container">
-				<p id="CU">Contact Us!</p>
-			</div>
-
-			<div class="container" id="contact">
-				<div class="box" style="height: 150px; width: 900px">
-					<div class="icon">
-						<i class="fa fa-map-pin" aria-hidden="true"></i>
-						<h4>Address</h4>
-						<h3>Wollongong, 2500</h3>
-					</div>
-				</div>
-				<div class="box" style="height: 150px; width: 900px">
-					<div class="icon">
-						<i class="fa fa-phone" aria-hidden="true"></i>
-						<h4>Phone</h4>
-						<h3>+61 386 937 495</h3>
-					</div>
-				</div>
-				<div class="box" style="height: 150px; width: 900px">
-					<div class="icon">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-						<h4>Email</h4>
-						<h3>cSystems@ppal.com</h3>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-
-		<!-- Bottom Info -->
+		<!------------------- Bottom Info ------------------->
 		<div id="bottomInfo">
 			<div class="container">
 				<div class="bottomDiv">
@@ -148,22 +249,10 @@
 
 					<div class="bDiv">
 						<p id="miniTitle">
-							About Us
-						</p>
-						<p class="miniInfo">
-							We take pride in our expertise to build a rich user experience and high-quality software product to deliver important results in a fast and reliable manner. 
-						</p>
-						<p id="miniAboutUsInfo">
-						</p>
-					</div>
-
-					<div class="bDiv">
-						<p id="miniTitle">
 							Quick Links
 						</p>
 						<p class="miniInfo">
 							<a id="miniLink" href="about.html">About</a> <br />
-							<a id="miniLink" href="ourTeam.html">Our Team</a> <br />
 							<a id="miniLink" href="patientPal.html">PatientPal</a> <br />
 						</p>
 					</div>
@@ -182,11 +271,32 @@
 				</div>
 			</div>
 		</div>
-
 		<div id="footerDiv">
 			<footer id="footer">
 				<p>&copy; CellSystems 2019</p>
 			</footer>
 		</div>
+		<script>
+			// Get the modal
+			var modal = document.getElementById("myModal");
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById("myImg");
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			  modal.style.display = "block";
+			  modalImg.src = this.src;
+			  captionText.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+			  modal.style.display = "none";
+			}
+		</script>
 	</body>
 </html>

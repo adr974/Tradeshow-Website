@@ -11,13 +11,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="bootstrap.min.js"></script>
 
-	<body>
+	<body style="background-color: #f9f9f9">
 		<!--NavBar-->
-	  	<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
+	  	<nav class="navbar navbar-expand-lg navbar-light sticky-top">
 			<a class="navbar-brand2"><img id="logoNav" src="assets/logo.png"></a>
 
 			<div class="navbar-brand">
-				<a id="link" href="main.html" class="welcome-processes"><span class="welcome1">Cell</span><span class="welcome2">Systems</span></a>
+				<a id="link" href="index.html" class="welcome-processes"><span class="welcome1">Cell</span><span class="welcome2">Systems</span></a>
 			</div>
 
 
@@ -28,34 +28,24 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
 		      <li class="nav-item">
-		        <a href="main.html"><img id="logoLink" src="assets/logo.png" /></a>
+		        <a href="index.html"><img id="logoLink" src="assets/logo.png" /></a>
 		      </li>
 		      <li class="nav-item">
-		        <a id="nav-hover" class="nav-link" href="about.html">About</a>
-		      </li>
-
-		      <li class="nav-item">
-		        <a id="nav-hover" class="nav-link" href="ourteam.html">Our Team</a>
+		        <a id="nav-hover" class="nav-link" href="about.html">About Us</a>
 		      </li>
 		      <li class="nav-item">
 		        <a id="nav-hover" class="nav-link" href="patientPal.html">PatientPal</a>
 		      </li>
 		    </ul>
-		    <!-- <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form> -->
 		  </div>
 		</nav>
 
+
 		<div class="container" id="pp-wrapper">
-			<div style="padding: 10px;">
+			<div>
 				<h1 id="title">PatientPal</h1>
-				<div id="about-con" style="display: flex; flex-direction: row; margin-bottom: 0;">
-					<div style="height: 100%; margin-right: 30px; flex: 1;">
-						<img src="assets/patientPalPreview.png" style="height: 100%; width: 100%;" />
-					</div>
-					<div style="height: 100%; flex: 1; margin-right: 30px;">
+				<div id="about-con">
+					<div>
 						<h4>Introduction</h4>
 						<div id="underlineDiv">
 				        	<div id="dividerLine"></div>
@@ -64,58 +54,104 @@
 						<p id="patientInfo">
 							PatientPal is a survey toolkit that we’ve been developing for Didymo Designs and NSW Health. Our software will be used by both medical personnel to create surveys for tracking cancer patients’ progress, as well as by patients to complete surveys and send them back. <br /> <br />
 						</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<!-- Photo1 -->
+		<div class="container" id="form-photo1">
+			<img id="myImg" src="assets/patientPalPreview.png" alt="PatientPal homepage"/>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div>
+
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = document.getElementById("myImg");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img.onclick = function(){
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+				  modal.style.display = "none";
+				}
+			</script>
+		</div>
+
+		<div class="container" id="pp-wrapper">
+			<div>
+				<div id="about-con">
+					<div>
 						<h4>General Idea</h4>
 						<div id="underlineDiv">
 				        	<div id="dividerLine"></div>
 				        	<div id="blue-line"></div>
 				        </div>
 						<p id="patientInfo">
-							As PatientPal will serve as a replacement for PROSAIQ, the survey toolkit built with KoboToolbox that is currently used, we wanted to incorporate some of PROSAIQ’s design features and flows into our software. Not only will this <u>allow survey creators and patients to have a smoother transition</u> into PatientPal, but PROSAIQ and KoboToolbox are both very user-friendly and have excellent user interfaces.
+							As PatientPal will serve as a replacement for PROSAIQ, the survey toolkit built with KoboToolbox that is currently used, we wanted to incorporate some of PROSAIQ’s design features and flows into our software. Not only will this <span id="boldp">allow survey creators and patients to have a smoother transition</span> into PatientPal, but PROSAIQ and KoboToolbox are both very user-friendly and have excellent user interfaces.
 						</p>
-					</div>
-				</div>
-				<div class="container" id="contact">
-					<div class="box" style="height: 150px; width: 900px;">
-						<div class="icon">
-							<i class="fa fa-check" aria-hidden="true" style="font-size: 30px; margin-bottom: 10px;"></i>
-							<p style="font-size: 25px; font-weight: lighter; color: #017BB9;">
-								EFFICIENCY
-							</p>
-							<p style="font-size: 15px; font-weight: lighter; color: black;">
-								PatientPal will allow a <span id="boldp">more simple requirement elicitation process</span> and readily defined project scope compared to the current PROSAIQ system, 
-							</p>
-						</div>
-					</div>
-					<div class="box" style="height: 150px; width: 900px">
-						<div class="icon">
-							<i class="fa fa-clock" aria-hidden="true" style="font-size: 30px; margin-bottom: 10px;"></i>
-							<p style="font-size: 25px; font-weight: lighter; color: #017BB9;">
-								TIME EFFICIENCY
-							</p>
-							<p style="font-size: 15px; font-weight: lighter; color: black;">
-								Produces <span id="boldp">faster processing of results</span> to ensure the patient will recieve the outcomes as fast as possible.
-							</p>
-						</div>
-					</div>
-					<div class="box" style="height: 150px; width: 900px">
-						<div class="icon">
-						<i class="fa fa-check-circle" aria-hidden="true" style="font-size: 30px; margin-bottom: 10px;"></i>
-						<p style="font-size: 25px; font-weight: lighter; color: #017BB9;">
-							USABILITY
-						</p>
-							<p style="font-size: 15px; font-weight: lighter; color: black;">
-								Ensures ease of use of the system to <span id="boldp">minimise time is wasted</span> by medical professionals’ when transitioning to the new system.
-							</p>
-						</div>
 					</div>
 				</div>	
 			</div>
 		</div>
 
 
+		<!------------------- Features Pannel ------------------->
+		<div class="container" id="attributes">
+				<div class="box">
+					<div class="icon">
+						<img class="feat" src="assets/tick1.svg" />
+						<p class="feat-title">
+							IMPROVED WORKFLOW
+						</p>
+						<p class="feat-info">
+							PatientPal will allow a <span id="boldp">more simple requirement elicitation process</span> and readily defined project scope compared to the current PROSAIQ system, 
+						</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img class="feat" src="assets/time.svg" />
+						<p class="feat-title">
+							TIME EFFICIENCY
+						</p>
+						<p class="feat-info">
+							Produces <span id="boldp">faster processing of results</span> to ensure the patient will recieve the outcomes as fast as possible.
+						</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img class="feat" src="assets/usability.svg" />
+					<p class="feat-title">
+						USABILITY
+					</p>
+						<p class="feat-info">
+							Ensures ease of use of the system to <span id="boldp">minimise time is wasted</span> by medical professionals’ when transitioning to the new system.
+						</p>
+					</div>
+				</div>
+		</div>
+
+		<!---------Banner------------>
 		<div id="stretch">
 			<div class="container" id="info">
-				<p style="text-align: center; font-weight: lighter; font-size: 25px; color: #F5F5F5;">
+				<p id="banner-txt">
 
 					<br />
 					Our task is to create a <span id="boldp">new survey toolkit</span> to be used within the NSW Department of Health that will <span id="boldp">enable users to create and send surveys to patients</span> in order to collect ePROs. This toolkit will serve as a replacement to the current system, PROSAIQ, which has several areas upon which we aim to improve. <br /> <br />
@@ -125,94 +161,122 @@
 
 
 		<!---------PatientPal Process------------>
-		<div class="container" id="ppDiv" style="height: 650px;">
+		<div class="container">
 			<h1>The Process</h1>
+		</div>
 
-			<div style="display: flex; justify-content: center; float: left; margin-bottom: 40px;">
-				<div style="width: 500px; height: 500px; margin-right: 40px;">
-					<h4>Introduction</h4>
-					<div id="underlineDiv">
-			        	<div id="dividerLine"></div>
-			        	<div id="blue-line"></div>
-			        </div>
+		<div class="container" id="about-con2">
+			<div id="about-info">
+				<div>
 					<p id="patientInfo">
 						Currently patients undergoing radiotherapy as a treatment for cancer are required to be examined by medical personnel periodically, to monitor their state of health. This is an <span id="boldp">inefficient use of human resources</span> as these check-ups do not require immediate medical examination.<br /><br />
 
 						They are often simple questions to do with how they feel, any recurring illnesses, new ailments etc.<br /><br />
 
-						Our system intends to alleviate this by allowing for patients to <u>receive personalised questionnaires from staff within the NSW Department of Health</u>. The patient will complete the form and send it back, streamlining the process of monitoring patients. <br /> <br />
+						Our system intends to alleviate this by allowing for patients to <span id="boldp">receive personalised questionnaires from staff within the NSW Department of Health</span>. The patient will complete the form and send it back, streamlining the process of monitoring patients. <br /> <br />
 					</p>
 				</div>
-				<div style="width: 500px; height: 500px;">
-					<img src="assets/patientPalPreview.png" style="height: 497px; width: 497px;">
+			</div>
+			<div id="about-img-div">
+				<img id="myImg2" src="assets/patientPalPreview.png" alt="Live preview of current survey" />
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
 				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById("myModal");
+
+					// Get the image and insert it inside the modal - use its "alt" text as a caption
+					var img = document.getElementById("myImg2");
+					var modalImg = document.getElementById("img01");
+					var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				</script>
 			</div>
 		</div>
 
+
 		<div id="titleDiv" class="container"><p id="title">How does this work?</p></div>
 
-		<div class="container" style="margin-bottom: 80px;">
-			<div style="display: flex; justify-content: center; margin-bottom: 20px;">
-				<div style="width: 70px;">
+		<div class="container" id="breakdown-wrapper">
+			<div id="steps-div">
+				<div class="step1">
 					<p id="olN">1.</p>
 				</div>
 
-				<div style="width: 850px;">
-					<p id="steps" style="margin-top: -10px;">
+				<div class="step2">
+					<p id="steps">
 						Patient logs in and answers survey/questionaire.
 					</p>
 				</div>
-				<div style="width: 10px;">
-					<i class="fa fa-check" aria-hidden="true" style="font-size: 30px; margin-bottom: 10px;"></i>
+				<div class="step3">
+					<img id="tick2" src="assets/tick2.svg" />
 				</div>
 			</div>
-			<div style="display: flex; justify-content: center; margin-bottom: 20px;">
-				<div style="width: 70px;">
+			<div id="steps-div">
+				<div class="step1">
 					<p id="olN">2.</p>
 				</div>
 
-				<div style="width: 850px;">
-					<p id="steps" style="margin-top: -10px;">
+				<div class="step2">
+					<p id="steps">
 						Doctor examines the submitted forms.
 					</p>
 				</div>
-				<div style="width: 10px;">
-					<i class="fa fa-check" aria-hidden="true" style="font-size: 30px; margin-bottom: 10px;"></i>
+				<div class="step3">
+					<img id="tick2" src="assets/tick2.svg" />
 				</div>
 			</div>
-			<div style="display: flex; justify-content: center; margin-bottom: 20px;">
-				<div style="width: 70px;">
+			<div id="steps-div">
+				<div class="step1">
 					<p id="olN">3.</p>
 				</div>
 
-				<div style="width: 850px;">
-					<p id="steps" style="margin-top: -10px;">
+				<div class="step2">
+					<p id="steps">
 						Saves time for both patient and doctor.
 					</p>
 				</div>
-				<div style="width: 10px;">
-					<i class="fa fa-check" aria-hidden="true" style="font-size: 30px; margin-bottom: 10px;"></i>
+				<div class="step3">
+					<img id="tick2" src="assets/tick2.svg" />
 				</div>
 			</div>
-			<div style="display: flex; justify-content: center; margin-bottom: 20px;">
-				<div style="width: 70px;">
+			<div id="steps-div">
+				<div class="step1">
 					<p id="olN">4.</p>
 				</div>
 
-				<div style="width: 850px;">
-					<p id="steps" style="margin-top: -10px;">
+				<div class="step2">
+					<p id="steps">
 						Processes result faster.
 					</p>
 				</div>
-				<div style="width: 10px;">
-					<i class="fa fa-check" aria-hidden="true" style="font-size: 30px; margin-bottom: 10px;"></i>
+				<div class="step3">
+					<img id="tick2" src="assets/tick2.svg" />
 				</div>
 			</div>
 		</div>
 
 		<div id="stretch">
 			<div class="container" id="info">
-				<p style="text-align: center; font-weight: lighter; font-size: 25px; color: #F5F5F5;">
+				<p id="banner-txt">
 
 					<br />
 					There are <span id="boldp">many benefits of PatientPal</span> to both health practitioners and patients over the current PROSAIQ system. These include: <br /> <br />
@@ -227,16 +291,12 @@
 			</p>
 		</div>
 
-
+		<!-------------------- Benefits ---------------------->
 		<div class="container" id="ppDiv">
-			<div style="display: flex; justify-content: center; margin-bottom: 40px;">
-				<div style="width: 500px; margin-right: 50px;">
-					<div style="text-align: center;">
+			<div id="ben-wrapper">
+				<div id="bw1">
+					<div>
 						<h3>For Health Practitioners </h3>
-						<div id="underlineDivC">
-				        	<div id="dividerLineC"></div>
-				        	<div id="blue-lineC"></div>
-				        </div>
 			    	</div>
 
 			        <p id="info3">
@@ -244,13 +304,9 @@
 					</p>
 				</div>
 
-				<div style="width: 500px;">
-					<div style="text-align: center;">
+				<div id="bw2">
+					<div>
 						<h3>For Patients</h3>
-						<div id="underlineDivC">
-				        	<div id="dividerLineC"></div>
-				        	<div id="blue-lineC"></div>
-				        </div>
 			    	</div>
 
 			        <p id="info3">
@@ -260,8 +316,7 @@
 			</div>
 		</div>
 
-
-		<!-- Bottom Info -->
+		<!-------------------- Bottom Info -------------------->
 		<div id="bottomInfo">
 			<div class="container">
 				<div class="bottomDiv">
@@ -274,22 +329,10 @@
 
 					<div class="bDiv">
 						<p id="miniTitle">
-							About Us
-						</p>
-						<p class="miniInfo">
-							We take pride in our expertise to build a rich user experience and high-quality software product to deliver important results in a fast and reliable manner. 
-						</p>
-						<p id="miniAboutUsInfo">
-						</p>
-					</div>
-
-					<div class="bDiv">
-						<p id="miniTitle">
 							Quick Links
 						</p>
 						<p class="miniInfo">
 							<a id="miniLink" href="about.html">About</a> <br />
-							<a id="miniLink" href="ourTeam.html">Our Team</a> <br />
 							<a id="miniLink" href="patientPal.html">PatientPal</a> <br />
 						</p>
 					</div>
